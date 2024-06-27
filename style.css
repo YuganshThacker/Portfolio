@@ -4,7 +4,8 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -71,10 +72,10 @@ nav ul li a:hover::after {
     text-align: left;
     max-width: 600px;
 }
-.header-text p{
+
+.header-text p {
     font-size: 24px;
 }
-
 
 .header-text h1 {
     font-size: 60px;
@@ -166,44 +167,46 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+
 /*---------------------------------My Services----------------------------------*/
-#services{
-   padding: 30px 0;
+
+#services {
+    padding: 30px 0;
 }
-.services-list{
+
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div i h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
-.services-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .service-item {
@@ -226,36 +229,42 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-weight: 500;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
+
 /*-------------------------portfolio---------------------*/
-#portfolio{
+
+#portfolio {
     padding: 50px 0;
-    
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -270,11 +279,13 @@ nav ul li a:hover::after {
     font-size: 14px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -285,15 +296,17 @@ nav ul li a:hover::after {
     height: 60px;
     border-radius: 50%;
     text-align: center;
-   
 }
-.work:hover img{
+
+.work:hover img {
     transform: scale(1.1);
 }
-.work:hover .layer{
+
+.work:hover .layer {
     height: 100%;
 }
-.btn{
+
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -304,28 +317,36 @@ nav ul li a:hover::after {
     color: #fff;
     transition: background 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     background: #ff004f;
 }
+
 /*-------------------------contact-----------------------*/
-.contact-left{
+
+.contact-left {
     flex-basis: 35%;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
 }
-.contact-left p{
+
+.contact-left p {
     margin: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -333,18 +354,23 @@ nav ul li a:hover::after {
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
-.contact-right form{
+
+.contact-right form {
     width: 100%;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -354,14 +380,21 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
-form .btn2{
+
+form textarea {
+    height: 150px; /* Adjust as needed */
+}
+
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -369,23 +402,34 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
-/*-----------------------css for small screens---------------*/
+
 nav .fas {
     display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
-    .header-text {
-        font-size: 16px;
+    nav .fas {
+        display: block;
+        font-size: 25px;
     }
 
     .header-text h1 {
         font-size: 30px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        
     }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
+    .header-text p{
+        margin-top: 150px;
+        text-align: center;
     }
 
     nav ul {
@@ -414,11 +458,34 @@ nav .fas {
     }
 
     .about-col-1 {
-        margin-bottom: 30px;
+        flex-basis: 100%;
+        text-align: center; /* Center align the entire column */
+    }
+
+    .about-col-1 img {
+        width: 80%; /* Adjust image width as needed */
+        height: auto;
+        
+        margin: 0 auto; /* Center align the image */
+        margin-top: -400px; /* Adjust negative top margin as per your design */
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: center; /* Center align text content */
     }
 
     .tab-titles {
         margin-top: 30px;
+        text-align: center;
+    }
+
+    .tab-links {
+        margin-right: 15px;
+    }
+
+    .tab-contents ul {
+        text-align: left;
     }
 
     .services-list {
@@ -434,7 +501,8 @@ nav .fas {
         flex-basis: 100%;
     }
 
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
@@ -448,16 +516,89 @@ nav .fas {
 
     .social-icons {
         text-align: left;
-        margin-left: 0; /* Added to align the social icons to the left */
+        margin-left: 0;
     }
 
     .social-icons a {
         margin-right: 15px;
         color: #ababab;
     }
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
+
+    /* Enhancements for buttons and text */
+    .btn,
+    .btn2 {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .btn:hover,
+    .btn2:hover {
+        background: #ff004f;
+    }
+
+    .contact-left p i,
+    .header-text h1 span {
+        color: #ff004f;
+    }
+
+    .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .work {
+        flex-basis: 100%;
+    }
+
+    .layer h3 {
+        font-size: 18px;
+    }
+
+    .layer p {
+        font-size: 14px;
+    }
+
+    .layer a {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    #msg {
+        margin-top: 20px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    form textarea {
+        height: 150px; /* Adjust as needed */
+    }
+
+    .contact-right form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }

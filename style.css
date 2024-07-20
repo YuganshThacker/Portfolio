@@ -464,10 +464,12 @@ nav .fas {
 
     .about-col-1 img {
     
-        width: 300px;
-        height: auto;
+        width: 100px;
+        height: 20px;
         margin: 0 auto; 
         margin-top: -100px; 
+        margin-left: 0;
+        
     }
 
     .about-col-2 {

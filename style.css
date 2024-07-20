@@ -380,11 +380,11 @@ form textarea {
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-y: auto; 
 }
 
 form textarea {
-    height: 150px; /* Adjust as needed */
+    height: 150px; 
 }
 
 form .btn2 {
@@ -459,21 +459,20 @@ nav .fas {
 
     .about-col-1 {
         flex-basis: 100%;
-        text-align: center; /* Center align the entire column */
+        text-align: center; 
     }
 
     .about-col-1 img {
-        width: 80%; /* Adjust image width as needed */
+    
+        width: 300px;
         height: auto;
-        
-        margin: 0 auto; /* Center align the image */
-        margin-top: -200px;/* Adjust negative top margin as per your design */
-        margin-right: -20px;
+        margin: 0 auto; 
+        margin-top: -100px; 
     }
 
     .about-col-2 {
         flex-basis: 100%;
-        text-align: center; /* Center align text content */
+        text-align: center; 
     }
 
     .tab-titles {
@@ -525,7 +524,7 @@ nav .fas {
         color: #ababab;
     }
 
-    /* Enhancements for buttons and text */
+
     .btn,
     .btn2 {
         width: 80%;
@@ -577,6 +576,7 @@ nav .fas {
 
     #msg {
         margin-top: 20px;
+        color: aqua;
     }
 
     form input,
@@ -590,11 +590,11 @@ nav .fas {
         color: #fff;
         font-size: 18px;
         border-radius: 6px;
-        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-y: auto; 
     }
 
     form textarea {
-        height: 150px; /* Adjust as needed */
+        height: 150px; 
     }
 
     .contact-right form {

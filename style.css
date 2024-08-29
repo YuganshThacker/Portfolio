@@ -167,6 +167,10 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+#aboutmeimg image{
+    width: 400px;
+    height: auto;
+}
 
 /*---------------------------------My Services----------------------------------*/
 
@@ -464,8 +468,8 @@ nav .fas {
 
     #aboutmeimg {
     
-        width: 100px;
-        height: 20px;
+        
+        
         margin: 0 auto; 
         margin-top: -100px; 
         margin-left: 0;

@@ -1308,3 +1308,17 @@ span.name{
 .visit-button:hover i {
     transform: translateX(3px); /* Slight icon movement on hover */
 }
+
+/* Project media: one fixed-height box so cards line up */
+.project-video img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    display: block;
+}
+.project-video img.contain {
+    object-fit: contain;
+    background: #111;
+}

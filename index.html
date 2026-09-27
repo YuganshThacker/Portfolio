@@ -59,9 +59,9 @@
                     <h1 class="sub-title">About</h1>
                   </div>
                     <p class="about-text">
-                        I’m <span class="name">Yugansh</span> Thacker, a Computer Engineering student and hands-on builder focused on AI systems, automation, backend engineering, and production-oriented software. I build beyond simple demos: agents with guardrails, data pipelines, multimodal applications, distributed systems, and tools that can be tested, observed, and deployed.
+                        I’m <span class="name">Yugansh</span> Thacker, a Computer Science student and hands-on builder focused on AI systems, automation, backend engineering, and production-oriented software. I build beyond simple demos: agents with guardrails, data pipelines, multimodal applications, and tools that can be tested, observed, and deployed.
 
-                        My recent work includes an AI revenue-recovery agent with policy controls and evaluation, automated financial-data pipelines, a multimodal troubleshooting assistant, and distributed-systems projects in Go. I enjoy taking ideas from architecture to implementation, testing, deployment, and iteration.
+                        My recent work includes an AI revenue-recovery agent with policy controls and evaluation, automated financial-data pipelines, a multimodal troubleshooting assistant, and an MCP server that produces short-form video behind a human approval gate. I enjoy taking ideas from architecture to implementation, testing, deployment, and iteration.
                     </p>
                  </div>
             </div>
@@ -74,52 +74,48 @@
         <div id="projects" class="projects-header">
             <button class="projects-button"><i class="fa-solid fa-mug-hot"></i> My Projects</button>
             <h2>Check out my <span class="highlight">latest work</span></h2>
-            <p>My selected work spans AI agents, multimodal applications, automation, financial data infrastructure, and distributed systems.</p>
+            <p>My selected work spans AI agents, multimodal applications, automation, generative media, and financial data infrastructure.</p>
         </div>
 
         <!-- Projects Grid -->
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project1.mp4" type="video/mp4"></video></div>
+                <div class="project-video"><img src="images/reelforge.gif" alt="reelforge rendering a vertical short with word-highlighted captions" class="contain"></div>
+                <h3>reelforge — AI Shorts Pipeline (MCP)</h3>
+                <p class="project-duration">MCP · Generative AI · Automation · Security</p>
+                <p>MCP server that turns a topic into a captioned 1080x1920 short: Claude script, ElevenLabs/edge-tts voice, open-weight diffusion visuals with LoRA support, ffmpeg assembly. The agent cannot approve its own work; publishing needs a human approval bound to the file's hash.</p>
+                <a href="https://github.com/YuganshThacker/reelforge" target="_blank" class="github-button">GitHub</a>
+            </div>
+            <div class="project-card">
+                <div class="project-video"><img src="images/recoup-audit.jpg" alt="Recoup audit report: case ledger with policy refusals and outcomes"></div>
                 <h3>Recoup — AI Revenue Recovery Agent</h3>
                 <p class="project-duration">AI Agents · Evaluation · Guardrails</p>
                 <p>Built a bounded AI agent for subscription payment recovery with model reasoning separated from deterministic policy controls, structured outputs, fallbacks, auditability, and reproducible evaluation.</p>
                 <a href="https://github.com/YuganshThacker/recoup" target="_blank" class="github-button">GitHub</a>
             </div>
             <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project4.mp4" type="video/mp4"></video></div>
                 <h3>RealityFixer</h3>
                 <p class="project-duration">Multimodal AI · Gemini · TypeScript</p>
                 <p>Built a multimodal troubleshooting assistant that turns an image into structured diagnosis, safety warnings, repair steps, and visual annotations.</p>
                 <a href="https://github.com/YuganshThacker/RealityFixer" target="_blank" class="github-button">GitHub</a>
             </div>
             <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project2.mp4" type="video/mp4"></video></div>
                 <h3>Bhavcopy Automation</h3>
                 <p class="project-duration">Automation · Data Engineering · PostgreSQL</p>
                 <p>Automated NSE/BSE end-of-day ingestion, normalization, technical-indicator computation, idempotent persistence, and scheduled execution.</p>
                 <a href="https://github.com/YuganshThacker/bhavcopy-automation" target="_blank" class="github-button">GitHub</a>
             </div>
             <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project3.mp4" type="video/mp4"></video></div>
                 <h3>Stock Data Pipeline</h3>
                 <p class="project-duration">Financial Data · Python · PostgreSQL</p>
                 <p>Designed a reusable financial-data layer for collecting, cleaning, normalizing, and structuring Indian market data for analytics, ML, and AI applications.</p>
                 <a href="https://github.com/YuganshThacker/Stock-Data-Pipeline" target="_blank" class="github-button">GitHub</a>
             </div>
             <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project1.mp4" type="video/mp4"></video></div>
-                <h3>raft-kv</h3>
-                <p class="project-duration">Go · Distributed Systems · Raft</p>
-                <p>Implemented a strongly consistent distributed key-value store exploring leader election, replication, write-ahead logging, crash recovery, snapshots, and observability.</p>
-                <a href="https://github.com/YuganshThacker/raft-kv" target="_blank" class="github-button">GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-video"><video autoplay muted loop><source src="images/project4.mp4" type="video/mp4"></video></div>
-                <h3>ChaosLab</h3>
-                <p class="project-duration">Go · Chaos Engineering · Reliability</p>
-                <p>Built a focused fault-injection tool for testing distributed systems under process failures, latency, packet loss, and network partitions.</p>
-                <a href="https://github.com/YuganshThacker/chaoslab" target="_blank" class="github-button">GitHub</a>
+                <h3>OneFlow — Plan to Bill</h3>
+                <p class="project-duration">Hackathon Finalist · Team Lead · IIT Gandhinagar</p>
+                <p>Led a 3-person team at the Odoo x Amalthea hackathon to ship a multi-role project and billing platform in 24 hours, with milestone-triggered invoicing.</p>
+                <a href="https://github.com/YuganshThacker/ODOO-x-Amalthea-OneFlow" target="_blank" class="github-button">GitHub</a>
             </div>
         </div>
     </section> <!-- End of .projects-section -->
@@ -148,9 +144,27 @@
 
         <div class="section">
         <p class="skills-description">
-          A showcase of my technical expertise and professional toolkit. These are the
-          technologies I've mastered and regularly use in my development journey.
+          What I use to build, ship and test. Every item here shows up in a project above.
         </p>
+      </div>
+      <div class="section">
+        <div class="skills-category">
+          <h3>
+            <span class="category-icon"><i class="fa-solid fa-brain"></i></span> AI &amp; Agents
+          </h3>
+        </div>
+        <div class="section">
+          <div class="skills-items">
+            <span class="skill-item">Claude API</span>
+            <span class="skill-item">OpenAI API</span>
+            <span class="skill-item">MCP servers</span>
+            <span class="skill-item">RAG</span>
+            <span class="skill-item">pgvector</span>
+            <span class="skill-item">Structured outputs</span>
+            <span class="skill-item">Guardrails &amp; evals</span>
+            <span class="skill-item">diffusers + LoRA</span>
+          </div>
+        </div>
       </div>
       <div class="section">
         <div class="skills-category">
@@ -158,42 +172,48 @@
             <span class="category-icon"><i class="fa-solid fa-code"></i></span> Languages
           </h3>
         </div>
-
         <div class="section">
           <div class="skills-items">
             <span class="skill-item">Python</span>
+            <span class="skill-item">TypeScript</span>
             <span class="skill-item">JavaScript</span>
-            <span class="skill-item">Java</span>
-            <span class="skill-item">C++</span>
-            <span class="skill-item">C</span>
+            <span class="skill-item">SQL</span>
           </div>
         </div>
       </div>
-
       <div class="section">
         <div class="skills-category">
           <h3>
-            <span class="category-icon"><i class="fa-brands fa-react"></i></span> Frameworks
+            <span class="category-icon"><i class="fa-solid fa-server"></i></span> Backend &amp; Frontend
           </h3>
         </div>
-
         <div class="section">
           <div class="skills-items">
+            <span class="skill-item">FastAPI</span>
             <span class="skill-item">Node.js</span>
-            <span class="skill-item">Nest.js</span>
-            <span class="skill-item">React.js</span>
+            <span class="skill-item">Express</span>
+            <span class="skill-item">Flask</span>
+            <span class="skill-item">React</span>
+            <span class="skill-item">Next.js</span>
           </div>
         </div>
       </div>
-
       <div class="section">
         <div class="skills-category">
           <h3>
-            <span class="category-icon">🔧</span> Tools
+            <span class="category-icon"><i class="fa-solid fa-cloud"></i></span> Data, Infra &amp; Media
           </h3>
+        </div>
+        <div class="section">
           <div class="skills-items">
             <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">Redis</span>
+            <span class="skill-item">Supabase</span>
             <span class="skill-item">Docker</span>
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">Vercel</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">ffmpeg</span>
           </div>
         </div>
       </div>
@@ -210,9 +230,9 @@
             <img src="images/charusat.jpeg" alt="CHARUSAT Logo" class="education-logo">
             <div class="education-details">
                 <h3>CHARUSAT University</h3>
-                <p>B.Tech in Computer Engineering</p>
+                <p>B.Tech in Computer Science</p>
             </div>
-            <span class="education-date">2023 - Present</span>
+            <span class="education-date">2023 - 2027</span>
         </div>
       </div>
     </div>
